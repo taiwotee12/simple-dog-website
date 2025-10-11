@@ -1,0 +1,2 @@
+- [x] Change Contact link href from '#' to '#contact' in dogsite.html
+- [x] Add JavaScript to close hamburger menu when a nav link is clicked in app.js

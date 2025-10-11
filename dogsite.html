@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog website</title>
+    <link rel="stylesheet" href="dogsite.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body>
+    <header>
+    <nav>
+      <div class="logo"> DogLovers</div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#shop">Shop</a></li>
+        <li><a href="#adopt">Adopt</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <!-- CART ICON -->
+      <div class="cart-icon">
+        <i class="fas fa-shopping-cart"></i>
+        <span class="cart-count" id="cart-count">0</span>
+      </div>
+      <!-- HAMBUGGER -->
+      <div class="hambugger" id="hambugger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </nav>
+    <div class="hero">
+      <h1>Welcome to DogLovers</h1>
+      <p>Where every paw finds love ❤️</p>
+      <button>Adopt Now</button>
+    </div>
+     
+        
+  </header>
+      <section class="about" id="about">
+      <div class="about-container">
+    <img src="image/dog and cat1.jpg" alt="Happy Dog">
+    <div class="about-text">
+      <h2>Welcome to Paws World</h2>
+      <p>
+        At <strong>Paws World</strong>, we believe that every dog deserves a loving home and a joyful life. 
+        Our website is dedicated to providing resources, tips, and a community space for dog lovers everywhere.
+      </p>
+      <p>
+        From dog health care to training guides and adoption stories, we’re here to help you on your journey as a dog parent. 
+        Together, we can make the world a better place, one paw at a time.
+      </p>
+      <p>
+        Thank you for being part of our mission to spread love and care for all dogs!
+      </p>
+    </div>
+  </div>
+  </section>
+  <!-- <section id="why-choose" class="section">
+        <h2>Why Choose Us</h2>
+        <div class="reasons">
+            <div class="reason">
+                <h3>Quality Products</h3>
+                <p>High-quality dog items at affordable prices.</p>
+            </div>
+            <div class="reason">
+                <h3>Expert Care</h3>
+                <p>Professional advice and care for your pets.</p>
+            </div>
+            <div class="reason">
+                <h3>Adoption Services</h3>
+                <p>Help find loving homes for dogs in need.</p>
+            </div>
+        </div> -->
+    </section>
+   <section class="advantage">
+    <h2>Why Choose Us?</h2>
+    <div class="advantage-cards">
+      <div class="advantage-card">
+        <i class="fas fa-heart"></i>
+        <h3>Compassionate Care</h3>
+        <p>We prioritize the well-being and happiness of every dog in our care.</p>
+      </div>
+      <div class="advantage-card">
+        <i class="fas fa-home"></i>
+        <h3>Adoption Support</h3>
+        <p>We provide resources and guidance to help you find the perfect furry companion.</p>
+      </div>
+      <div class="advantage-card">
+        <i class="fas fa-users"></i>
+        <h3>Community Engagement</h3>
+        <p>Join a community of dog lovers who share your passion and commitment.</p>
+      </div>
+    </div>
+
+
+<section class="shopping" id="shop">
+  <h1>🛒 Shop Pet Supplies</h1>
+  <p>Find everything your furry friend needs!</p>
+  <div class="product-cards">
+    <div class="card">
+      <img src="img/2&1 dispenser.jpg" alt="2-in-1 Dispenser">
+      <div class="card-content">
+        <h3>2-in-1 Dispenser</h3>
+        <p>$15.00</p>
+        <button class="add-to-cart-btn" data-name="2-in-1 Dispenser" data-price="15">Add to Cart</button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="img/ball.jpg" alt="Ball Toy">
+      <div class="card-content">
+        <h3>Ball Toy</h3>
+        <p>$5.00</p>
+        <button class="add-to-cart-btn" data-name="Ball Toy" data-price="5">Add to Cart</button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="img/cat cloth.jpg" alt="Cat Cloth">
+      <div class="card-content">
+        <h3>Cat Cloth</h3>
+        <p>$10.00</p>
+        <button class="add-to-cart-btn" data-name="Cat Cloth" data-price="10">Add to Cart</button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="img/cathouse toy.jpg" alt="Cat House Toy">
+      <div class="card-content">
+        <h3>Cat House Toy</h3>
+        <p>$20.00</p>
+        <button class="add-to-cart-btn" data-name="Cat House Toy" data-price="20">Add to Cart</button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="img/dog cloth.jpg" alt="Dog Cloth">
+      <div class="card-content">
+        <h3>Dog Cloth</h3>
+        <p>$12.00</p>
+        <button class="add-to-cart-btn" data-name="Dog Cloth" data-price="12">Add to Cart</button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="img/fish.jpg" alt="Fish Tank">
+      <div class="card-content">
+        <h3>Fish Tank</h3>
+        <p>$25.00</p>
+        <button class="add-to-cart-btn" data-name="Fish Tank" data-price="25">Add to Cart</button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="img/food dispenser.jpg" alt="Food Dispenser">
+      <div class="card-content">
+        <h3>Food Dispenser</h3>
+        <p>$18.00</p>
+        <button class="add-to-cart-btn" data-name="Food Dispenser" data-price="18">Add to Cart</button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="img/full.jpg" alt="Full Set">
+      <div class="card-content">
+        <h3>Full Set</h3>
+        <p>$50.00</p>
+        <button class="add-to-cart-btn" data-name="Full Set" data-price="50">Add to Cart</button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="img/glove.jpg" alt="Glove">
+      <div class="card-content">
+        <h3>Glove</h3>
+        <p>$8.00</p>
+        <button class="add-to-cart-btn" data-name="Glove" data-price="8">Add to Cart</button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="img/plate.jpg" alt="Plate">
+      <div class="card-content">
+        <h3>Plate</h3>
+        <p>$7.00</p>
+        <button class="add-to-cart-btn" data-name="Plate" data-price="7">Add to Cart</button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="img/sponge.jpg" alt="Sponge">
+      <div class="card-content">
+        <h3>Sponge</h3>
+        <p>$4.00</p>
+        <button class="add-to-cart-btn" data-name="Sponge" data-price="4">Add to Cart</button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="img/toothbrush.jpg" alt="Toothbrush">
+      <div class="card-content">
+        <h3>Toothbrush</h3>
+        <p>$6.00</p>
+        <button class="add-to-cart-btn" data-name="Toothbrush" data-price="6">Add to Cart</button>
+      </div>
+    </div>
+    <!-- <div class="card">
+      <img src="img/towel.jpg" alt="Towel">
+      <div class="card-content">
+        <h3>Towel</h3>
+        <p>$9.00</p>
+        <button class="add-to-cart-btn" data-name="Towel" data-price="9">Add to Cart</button>
+      </div>
+    </div>
+  </div> -->
+</section>
+
+<section class="adopt">
+  <h1>🐶 Find Your Forever Friend</h1>
+    <p>Adopt a dog, save a life, and gain unconditional love.</p>
+</section>
+
+  <section class="adoption-section" id="adopt">
+    <!-- <h2>Available for Adoption</h2> -->
+    <div class="dog-cards">
+      <div class="card">
+        <img src="image/eski.jpg" alt="Dog 1">
+        <div class="card-content">
+          <h3>Luna</h3>
+          <p>Energetic and smart, perfect for active families. 1 year old.</p>
+          <a href="#" class="adopt-btn">Adopt Me</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="image/lhasaapso.jpg" alt="Dog 2">
+        <div class="card-content">
+          <h3>Luna</h3>
+          <p>Energetic and smart, perfect for active families. 1 year old.</p>
+          <a href="#" class="adopt-btn">Adopt Me</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="image/lhasami.jpg" alt="Dog 3">
+        <div class="card-content">
+          <h3>Luna</h3>
+          <p>Energetic and smart, perfect for active families. 1 year old.</p>
+          <a href="#" class="adopt-btn">Adopt Me</a>
+        </div>
+      </div>
+      
+
+      <div class="card">
+        <img src="image/pomeratanian.jpg" alt="Dog 4">
+        <div class="card-content">
+          <h3>Luna</h3>
+          <p>Energetic and smart, perfect for active families. 1 year old.</p>
+          <a href="#" class="adopt-btn">Adopt Me</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="image/golden.jpg" alt="Dog 5">
+        <div class="card-content">
+          <h3>Luna</h3>
+          <p>Energetic and smart, perfect for active families. 1 year old.</p>
+          <a href="#" class="adopt-btn">Adopt Me</a>
+        </div>
+      </div>
+      
+      <div class="card">
+        <img src="image/catlove.jpg" alt="Dog 6">
+        <div class="card-content">
+          <h3>Luna</h3>
+          <p>Energetic and smart, perfect for active families. 1 year old.</p>
+          <a href="#" class="adopt-btn">Adopt Me</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+    <!-- Contact Section -->
+  <section id="contact" class="contact">
+        <div>
+          <h2>Get in Touch</h2>
+          <p>Contact Us Today,And find ur new friend</p>
+        <form action="#">
+            <label for="name">Name:</label>
+            <input type="text" required>
+            <label for="email">Email:</label>
+            <input type="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"
+            rows="4" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+        </div>
+    </section>
+    <footer>
+      <p>&copy; 2025 DogLovers. All rights reserved.</p>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="http://www.linkedin.com/in/taiwo-anifowose-232797282"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+      <p>Follow us on social media for the latest updates!</p>
+
+    </footer>
+  
+    <script src="app.js"></script>
+  </body>
+</html>
