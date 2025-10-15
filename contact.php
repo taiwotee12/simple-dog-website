@@ -2,10 +2,10 @@
 header('Content-Type: application/json');
 
 // Database configuration
-$servername = "localhost";
-$username = "root"; // Default XAMPP username
-$password = ""; // Default XAMPP password (empty)
-$dbname = "doglovers_contact";
+$servername = "sql209.infinityfree.com";
+$username = "if0_40175544"; // 
+$password = "CmnpGLfjUu"; // 
+$dbname = "if0_40175544_dogweb";
 
 // Check if the request method is POST
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
