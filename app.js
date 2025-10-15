@@ -60,6 +60,57 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+
+// Contact form submission with AJAX and toast notification
+document.addEventListener('DOMContentLoaded', () => {
+  const contactForm = document.getElementById('contact-form');
+  const toast = document.getElementById('toast');
+
+  if (contactForm) {
+    contactForm.addEventListener('submit', async (e) => {
+      e.preventDefault(); // Prevent default form submission
+
+      const formData = new FormData(contactForm);
+
+      try {
+        const response = await fetch('contact.php', {
+          method: 'POST',
+          body: formData
+        });
+
+        console.log('Response status:', response.status);
+        console.log('Response headers:', response.headers);
+
+        const result = await response.json();
+        console.log('Parsed result:', result);
+
+        // Show toast notification
+        showToast(result.message, result.status);
+
+        // Clear form on success
+        if (result.status === 'success') {
+          contactForm.reset();
+        }
+      } catch (error) {
+        console.error('Error submitting form:', error);
+        showToast('An error occurred. Please try again.', 'error');
+      }
+    });
+  }
+
+  // Function to show toast notification
+  function showToast(message, type) {
+    toast.textContent = message;
+    toast.className = `toast ${type}`; // Add type class for styling
+    toast.style.display = 'block';
+
+    // Hide after 5 seconds
+    setTimeout(() => {
+      toast.style.display = 'none';
+    }, 5000);
+  }
+});
+
 //   // Cart display on click
 //   cartIcon.addEventListener('click', () => {
 //     displayCart();
